@@ -1,0 +1,141 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+ <!-- Preloader Starts -->
+    <div class="loader">
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Header Section Starts -->
+    <header id="header">
+        <div class="header-overlay">
+            <div class="container">
+                <!-- Logo Starts -->
+                <div data-scroll-reveal="enter top and move 50px over 1.2s">
+                    <img src="@routes.Assets.versioned("images/fit-logo.png")" style="width: 245px;margin-left: 40%;margin-bottom: 20%;">
+                </div>
+                <!-- Logo Ends -->
+                <!-- Main Heading Starts -->
+                <div class="main-head">
+                    <h2 data-scroll-reveal="enter left and move 50px over 1.8s">
+                        Something awesome is coming soon</h2>
+                    <p data-scroll-reveal="enter right and move 50px over 2.0s">
+                        We are building something very cool. Stay tuned and be patient. Your patience will
+                        be well paid.</p>
+                </div>
+
+				<div class="main-head">
+					<h2 data-scroll-reveal="enter left and move 50px over 1.8s" style="color: #67DFE0;">
+	                        Let's live Better !</h2>
+					<p data-scroll-reveal="enter right and move 50px over 2.0s">
+						<a href="#contact" style="color: #ff4c4c;font-weight: bold;">Request an invite</a>
+					</p>
+				</div>
+        	</div>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+    
+    <!-- Services Section Starts -->
+    <section id="services">
+        <div class="services-overlay">
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="main-head">
+                    <h2 data-scroll-reveal="enter top and move 50px over 1.2s">About Us</h2>
+                    <p data-scroll-reveal="enter bottom and move 50px over 1.4s">
+                        FitFyles attempts to invert the healthcare model and bring healthcare back to the control of individuals
+                        who would like to live better. For centuries, healthcare has been dominated by big houses. 
+                        FitFyles attempts to bring the power of being in control back to you. You are in control of your health records, 
+                        your prescriptions, your tests and your well being. You would decide which doctors are best for you and which medical 
+                        institutions deserve to be highlighted for their services. All this begins with click of a picture with your smart-phone.
+                    </p><br/>
+					<h5 data-scroll-reveal="enter bottom and move 50px over 1.4s">
+                        Sounds delightful?</h5>
+                </div>
+                <!-- Main Heading Ends -->
+                <!-- Services List Starts -->
+                <div id="services-blocks" class="row">
+                    <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                        <span class="fa fa-search"></span>
+                        <h4>
+                            Searchable History</h4>
+                        <p>
+                            Maintain and search all your prescriptions, medicines, tests for your entire life.
+                        </p>
+                    </div>
+                    <div data-scroll-reveal="enter top and move 50px over 1.7s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                        <span class="fa fa-smile-o"></span>
+                        <h4>
+                            Life Angel</h4>
+                        <p>
+                            Share medical data with hospitals, doctors, emergency rooms and save lives. Be a life angel for someone.
+                        </p>
+                    </div>
+                    <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                        <span class="fa fa-eye"></span>
+                        <h4>
+                            Centre of Attention</h4>
+                        <p>
+                            Be the cynosure for doctors, hospitals, test labs, pharma companies who would love to have you as their customer.
+                        </p>
+                    </div>
+                </div>
+                <!-- Services List Ends -->
+            </div>
+        </div>
+    </section>
+    <!-- Services Section Ends -->
+    <!-- Contact Us Section Starts -->
+    <section id="contact">
+        <div class="container">
+            <!-- Main Heading Starts -->
+            <div class="main-head">
+                <h2 data-scroll-reveal="enter top and move 50px over 1.2s" class="MT40">
+                    Request an Invite</h2>
+            </div>
+            <!-- Main Heading Ends -->
+            <!-- Form & Address Blocks Starts -->
+            <div class="row">
+                <!-- Contact Form Starts -->
+                <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <form id="contact-form" class="contact-form" name="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" required placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info">Subscribe</button>
+                    </div>
+                    </form>
+                </div>
+                <!-- Contact Form Ends -->
+                <!-- Contact Address Starts -->
+                <div data-scroll-reveal="enter right and move 50px over 1.8s" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        You could be changing the way you manage your and your loved ones health forever. Welcome to the inverted model of healthcare where the health seeker is the king.</p>
+                </div>
+                <!-- Contact Address Ends -->
+            </div>
+            <!-- Form & Address Blocks Ends -->
+        </div>
+    </section>
+    <!-- Contact Us Section Ends -->
+    <!-- Footer Starts -->
+    <footer id="footer">
+        <div class="container">
+            <!-- Copyright Starts -->
+            <div data-scroll-reveal="enter bottom and move 50px over 1.2s">
+                <p data-scroll-reveal="enter over 3.2s">
+                    Copyright 2015-16 &copy <a href="http://www.knoldus.com">
+                        Knoldus</a>
+                </p>
+            </div>
+            <!-- Copyright Ends -->
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+}
