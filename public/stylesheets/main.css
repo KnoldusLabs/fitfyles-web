@@ -1,24 +1,11 @@
-.custom-footer{
-    font-family: 'Roboto',sans-serif;
-    text-transform: uppercase;
-}
+.custom-footer{ font-family: 'Roboto',sans-serif;text-transform: uppercase; }
 
-.circle{
-	border-radius: 50%;
-	margin: 0.15em;
-	font-size: 2em;
-}
+.circle{ border-radius: 50%;margin: 0.15em;font-size: 2em; }
 
-.fa-facebook{
-	background: #000;
-    color: #FFFFFF;
-    padding: 0.25em 0.6em;
-}
+.fa-facebook{ background: #000;color: #FFFFFF;padding: 0.25em 0.6em; }
 
-.fa-twitter{
-	background: #000;
-    color: #FFFFFF;
-    padding: 0.25em 0.4em;
-}
+.fa-twitter{ background: #000;color: #FFFFFF;padding: 0.25em 0.4em; }
 
 .circle:hover { transform: scale(1.2); }
+
+div.history{ padding: 48px 20px 30px 20px;}
