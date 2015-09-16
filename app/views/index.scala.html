@@ -2,22 +2,21 @@
 
 @main("Welcome to FitFyles") {
 
- <!-- Preloader Starts -->
-    <div class="loader">
-    </div>
-    <!-- Preloader Ends -->
-    <!-- Header Section Starts -->
-    <header id="header">
-        <div class="header-overlay">
-            <div class="container">
-                <!-- Logo Starts -->
-                <div data-scroll-reveal="enter top and move 50px over 1.2s">
-                    <img src="@routes.Assets.versioned("images/fit-logo.png")" style="width: 245px;margin-left: 40%;margin-bottom: 20%;">
+<!-- Preloader Starts -->
+	<div class="loader"></div>
+<!-- Preloader Ends -->
+	<!-- Header Section Starts -->
+	<header id="header">
+		<div class="header-overlay">
+			<div class="container">
+				<!-- Logo Starts -->
+				<div data-scroll-reveal="enter top and move 50px over 1.2s">
+					<img src="@routes.Assets.versioned("images/fit-logo.png")" style="width: 245px;margin-left: 40%;margin-bottom: 20%;">
                 </div>
-                <!-- Logo Ends -->
-                <!-- Main Heading Starts -->
-                <div class="main-head">
-                    <h2 data-scroll-reveal="enter left and move 50px over 1.8s">
+				<!-- Logo Ends -->
+				<!-- Main Heading Starts -->
+				<div class="main-head">
+					<h2 data-scroll-reveal="enter left and move 50px over 1.8s">
                         Something awesome is coming soon</h2>
                     <p data-scroll-reveal="enter right and move 50px over 2.0s">
                         We are building something very cool. Stay tuned and be patient. Your patience will
@@ -100,15 +99,15 @@
                 <!-- Contact Form Starts -->
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <form id="contact-form" class="contact-form" name="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control" required placeholder="Enter Your Email">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-info">Subscribe</button>
-                    </div>
+                    	<div class="form-group">
+                        	<input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
+                    	</div>
+                    	<div class="form-group">
+                        	<input type="email" name="email" class="form-control" required placeholder="Enter Your Email">
+                    	</div>
+						<div class="form-group">
+                        	<button type="submit" class="btn btn-info">Subscribe</button>
+                    	</div>
                     </form>
                 </div>
                 <!-- Contact Form Ends -->
@@ -138,7 +137,7 @@
                 <ul>
                 	<a href="#" style="margin-left:15px">ABOUT US</a>
                 	<a href="#" style="margin-left:15px">HOW IT WORKS</a>
-                	<a href="#" style="margin-left:15px">CAREERS</a>
+                	<a href="https://fitfyles.recruiterbox.com" style="margin-left:15px">CAREERS</a>
                 	<a href="#" style="margin-left:15px">PRIVACY POLICY</a>
                 </ul>
                 </div>
@@ -150,20 +149,6 @@
             </div>
             <!-- Copyright Ends -->
         </div>
-<!--         <script type="text/javascript" id="rbox-loader-script">
-if(!window._rbox){
-window._rbox = { host_protocol:document.location.protocol, ready:function(cb){this.onready=cb;} };
-(function(d, e) {
-    var s, t, i, src=['/static/client-src-served/widget/37842/rbox_api.js', '/static/client-src-served/widget/37842/rbox_impl.js'];
-    t = d.getElementsByTagName(e); t=t[t.length - 1];
-    for(i=0; i<src.length; i++) {
-        s = d.createElement(e); s.src = _rbox.host_protocol + '//w.recruiterbox.com' + src[i];
-        t.parentNode.insertBefore(s, t.nextSibling);
-    }})(document, 'script');
-}
-</script>--> 
-        
     </footer>
     <!-- Footer Ends -->
-
 }
