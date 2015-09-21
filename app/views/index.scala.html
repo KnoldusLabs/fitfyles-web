@@ -1,4 +1,4 @@
-@(message: String)
+@(message: String)(implicit flash : play.api.mvc.Flash)
 
 @main("Welcome to FitFyles") {
 
@@ -95,18 +95,18 @@
             </div>
             <!-- Main Heading Ends -->
             <!-- Form & Address Blocks Starts -->
-            <div class="row">
+            <div class="row"> 
                 <!-- Contact Form Starts -->
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <form id="contact-form" class="contact-form" name="contact-form">
+                    <form id="contact-form" class="contact-form"  action = "javascript:formSubmit();"name="contact-form">
                     	<div class="form-group">
-                        	<input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
+                        	<input type="text" name="name" class="form-control" placeholder="Enter Your Name">
                     	</div>
                     	<div class="form-group">
-                        	<input type="email" name="email" class="form-control" required placeholder="Enter Your Email">
+                        	<input type="email" name="email" class="form-control" placeholder="Enter Your Email">
                     	</div>
 						<div class="form-group">
-                        	<button type="submit" class="btn btn-info">Subscribe</button>
+                        	<input type = "submit" value="Subscribe" class="btn btn-info">
                     	</div>
                     </form>
                 </div>
@@ -118,6 +118,11 @@
                 </div>
                 <!-- Contact Address Ends -->
             </div>
+            
+                <div class="alert alert-success" style="display:none">
+			  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			  <strong>Thank You!</strong> your request has been accepted and you should get an invitation in your mailbox in a few days.
+			</div>
             <!-- Form & Address Blocks Ends -->
         </div>
     </section>
@@ -151,4 +156,36 @@
         </div>
     </footer>
     <!-- Footer Ends -->
+    <script src="@controllers.routes.Application.javascriptRoutes" type="text/javascript"></script>
+<script>
+var formSubmit  = function() {
+	console.log("1");
+	   var ajaxCallBack = {
+			      success : function(data) {
+			    	  ajaxSuccess();
+			      },
+			      error : function(error) {
+			    	  alert("error");
+			      }
+			   }
+    	jsRoutes.controllers.Application.index().ajax(ajaxCallBack);
+}
+
+
+function ajaxSuccess() {
+	alert("gggg")
+	$('.alert-success').css('display','block');
+
+	var form = document.getElementById("contact-form");
+	form.reset();
+	
+	$(".alert-success").fadeTo(5000, 500).slideUp(1500, function(){
+	    $(".alert-success").alert('close');
+	    
+	});
+}
+ function ajaxError() {
+	 alert("error submission");
+ }
+</script>
 }
