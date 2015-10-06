@@ -120,9 +120,9 @@
             </div>
             
                 <div class="alert alert-success" style="display:none">
-			  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-			  <strong>Thank You!</strong> your request has been accepted and you should get an invitation in your mailbox in a few days.
-			</div>
+			        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			        <strong>Thank You!</strong> your request has been accepted and you should get an invitation in your mailbox in a few days.
+			    </div>
             <!-- Form & Address Blocks Ends -->
         </div>
     </section>
@@ -169,8 +169,6 @@ var formSubmit  = function() {
 			   }
 	   var name = $('#name').val();
 	   var email = $('#email').val();
-	   console.log("name: "+name);
-	   console.log("email: "+email);
        jsRoutes.controllers.Application.sendMail(name, email).ajax(ajaxCallBack);
 }
 
