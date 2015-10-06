@@ -100,10 +100,10 @@
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <form id="contact-form" class="contact-form"  action = "javascript:formSubmit();"name="contact-form">
                     	<div class="form-group">
-                        	<input type="text" name="name" class="form-control" placeholder="Enter Your Name">
+                        	<input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name">
                     	</div>
                     	<div class="form-group">
-                        	<input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+                        	<input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email">
                     	</div>
 						<div class="form-group">
                         	<input type = "submit" value="Subscribe" class="btn btn-info">
@@ -159,21 +159,23 @@
     <script src="@controllers.routes.Application.javascriptRoutes" type="text/javascript"></script>
 <script>
 var formSubmit  = function() {
-	console.log("1");
 	   var ajaxCallBack = {
 			      success : function(data) {
-			    	  ajaxSuccess();
+			    	  ajaxSuccess(data);
 			      },
 			      error : function(error) {
 			    	  alert("error");
 			      }
 			   }
-    	jsRoutes.controllers.Application.index().ajax(ajaxCallBack);
+	   var name = $('#name').val();
+	   var email = $('#email').val();
+	   console.log("name: "+name);
+	   console.log("email: "+email);
+       jsRoutes.controllers.Application.sendMail(name, email).ajax(ajaxCallBack);
 }
 
 
-function ajaxSuccess() {
-	alert("aaa");
+function ajaxSuccess(data) {
 	$('.alert-success').css('display','block');
 
 	var form = document.getElementById("contact-form");
@@ -182,8 +184,6 @@ function ajaxSuccess() {
 	$(".alert-success").fadeTo(5000, 500).slideUp(1500, function(){
 	    $(".alert-success").alert('close');
 		$('.alert-success').css('display','none');
-	    
-	    alert("called")
 	    
 	});
 }
