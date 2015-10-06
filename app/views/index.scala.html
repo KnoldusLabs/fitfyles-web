@@ -173,7 +173,7 @@ var formSubmit  = function() {
 
 
 function ajaxSuccess() {
-	alert("gggg")
+	alert("aaa");
 	$('.alert-success').css('display','block');
 
 	var form = document.getElementById("contact-form");
@@ -181,6 +181,9 @@ function ajaxSuccess() {
 	
 	$(".alert-success").fadeTo(5000, 500).slideUp(1500, function(){
 	    $(".alert-success").alert('close');
+		$('.alert-success').css('display','none');
+	    
+	    alert("called")
 	    
 	});
 }
