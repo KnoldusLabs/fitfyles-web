@@ -11,7 +11,9 @@ import scala.concurrent.ExecutionContext.Implicits.global
 class Application @Inject()(mailgunServiceApi: MailgunServiceApi) extends Controller {
 
   def index = Action { implicit request =>
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index("FitFyles"))
+    //Ok(views.html.email("Harsh Sharma"))
+    //Ok(views.html.contact("Harsh Sharma", "harshs316@gmail.com"))
   }
 
   /**

@@ -1,0 +1,108 @@
+
+
+@* content Template File *@
+@(name: String, email: String)
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>FitFyles</title>
+
+    </head>
+
+    <body style="font-size:12px; padding-top=0px;" align="left">
+    <table class="main" style="max-width: 100%; margin: 0 auto; display: block; padding: 0px; text-align:left; border: #aaa solid 1px;"  cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="padding: 20px;">
+                <table  cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <img style="width:160px; background-color:transparent;"
+                            src="@routes.Assets.versioned("images/fit-logo.png")"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Hi, @Html(name)</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Thank you for subscribing with FitFyles!</h3>
+                            <h4>Your account has been successfully created using the
+                                information that you provided.</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <b>Name</b>&nbsp;  :  @name
+                            <br>
+                            <b>Email</b>&nbsp;  :  @email
+                            <br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @*The final step in the registration process is to set your initial
+                            login password.<br>
+                            This is easy, just click on the button below and provide a password
+                            that meets our simple password rules.*@
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td style="padding: 0 0 20px; align:center">
+                            <br>
+                            <br>
+                            <center> You have been successfully subscribed ! </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            We hope for your better living!<br/>
+                            If you have any questions or need assistance, feel free to <a
+                        href="http://www.knoldus.com/connect/contactus.knol">contact us</a>
+                            <br>
+                            <br>
+                            The FitFyles team
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" align="left" style="border: #aaa solid 1px">
+        <tr>
+            <td>
+                <address style="font-style:normal;">
+                    <strong><span style="color:#4078C0;">FitFyles,</span></strong><br/>
+                    30/29, 1st Floor, Above UCO Bank<br/>
+                    Near Siddhartha Hotel<br/>
+                    East Patel Nagar, New Delhi - 110008<br/>
+                    India<br/>
+                    <abbr title="Phone">P:</abbr> +91 - 1142316525
+                </address>
+            </td>
+
+            <td>
+                Follow FitFyles<br>
+                <div>
+                    <a href="https://www.facebook.com/fitfyles">
+                        <div style="width: 24px; margin-right:2%; font-weight:bold; height: 24px; line-height:23px; background: #00A9E0; color:white; font:bold; -moz-border-radius: 3%; -webkit-border-radius: 3%; border-radius: 80%; float:left;"><center>f</center></div>
+                    </a>
+                    <a href="http://twitter.com/FitFyles">
+                        <div style="width: 24px; margin-right:2%; font-weight:bold; height:  24px; line-height:23px; background: #00A9E0; color:white; font:bold; -moz-border-radius: 3%; -webkit-border-radius: 3%; border-radius: 80%; float:left;"><center>t</center></div>
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+    </body>
+</html>

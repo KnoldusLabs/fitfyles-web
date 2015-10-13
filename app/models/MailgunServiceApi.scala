@@ -34,8 +34,7 @@ class MailgunService extends MailgunServiceApi {
         "from" -> Seq(Play.current.configuration.getString("from").get),
         "to" -> Seq(email),
         "subject" -> Seq(Play.current.configuration.getString("subject").get),
-        "html" -> Seq(name + ",",
-          "<br>", Play.current.configuration.getString("message").get)
+        "html" -> Seq((views.html.email(name, email)).toString())
       )
     )
     sendFitFylesNotification(name, email)
@@ -53,9 +52,7 @@ class MailgunService extends MailgunServiceApi {
         "from" -> Seq(Play.current.configuration.getString("from").get),
         "to" -> Seq(Play.current.configuration.getString("fitfylesEmail").get),
         "subject" -> Seq(Play.current.configuration.getString("subject").get),
-        "html" -> Seq(Play.current.configuration.getString("notificationAlert").get,
-          "<br>", "Name : " + name,
-          "<br>", "Email : " + email)
+        "html" -> Seq((views.html.contact(name, email)).toString())
       )
     )
   }
