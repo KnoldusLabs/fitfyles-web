@@ -5,38 +5,69 @@
 <!-- Preloader Starts -->
 	<div class="loader"></div>
 <!-- Preloader Ends -->
+<div id="header-nav" class="top-bar">
+        <div class="container">
+            <div class="col-md-8">
+                <a href="#" class="pull-left">
+                    <img src="@routes.Assets.versioned("images/fit-logo.png")" class="logo-img" />
+        		</a>
+                <ul class="top-menu">
+                	<li><a href="#about" class="scroll">About us</a></li>
+                	<li><a href="#services" class="scroll">How it works</a></li>
+                	<li><a href="https://fitfyles.recruiterbox.com">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-right playstore">
+                    <a href="#">
+                        Login
+                    </a>
+                    <a href="#">
+                        <span class="playstore-icon"> Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
 	<!-- Header Section Starts -->
 	<header id="header">
 		<div class="header-overlay">
-			<div class="container">
+			<div class="container side-padding">
 				<!-- Logo Starts -->
-				<div data-scroll-reveal="enter top and move 50px over 1.2s">
+				<!-- <div data-scroll-reveal="enter top and move 50px over 1.2s">
 					<img src="@routes.Assets.versioned("images/fit-logo.png")" style="width: 245px;margin-left: 40%;margin-bottom: 20%;">
-                </div>
+                </div> -->
 				<!-- Logo Ends -->
 				<!-- Main Heading Starts -->
 				<div class="main-head">
-					<h2 data-scroll-reveal="enter left and move 50px over 1.8s">
-                        Something awesome is coming soon</h2>
-                    <p data-scroll-reveal="enter right and move 50px over 2.0s">
-                        We are building something very cool. Stay tuned and be patient. Your patience will
-                        be well paid.</p>
+					<div class="col-md-6">
+                        <img src="@routes.Assets.versioned("images/dashboard.png")" />
+                    </div>
+					<div class="col-md-6 ">
+                        <div class="text-center side-content">
+                        <h2 data-scroll-reveal="enter left and move 50px over 1.8s" style="color: #67DFE0;">
+    	                        Let's live Better !
+                        </h2>
+                        <p>
+                            Track your records' status on dashboard, always shows you the updated stats
+                        </p>
+                        <div class="playstore fl-none">
+                            <h6>Download now for free</h6>
+                            <a href="#">
+                                <span class="playstore-icon"> Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-
-				<div class="main-head">
-					<h2 data-scroll-reveal="enter left and move 50px over 1.8s" style="color: #67DFE0;">
-	                        Let's live Better !</h2>
-					<p data-scroll-reveal="enter right and move 50px over 2.0s">
-						<a href="#contact" style="color: #ff4c4c;font-weight: bold;">Request an invite</a>
-					</p>
-				</div>
         	</div>
         </div>
     </header>
     <!-- Header Section Ends -->
-    
+
     <!-- Services Section Starts -->
-    <section id="services">
+    <section id="about">
         <div class="services-overlay">
             <div class="container">
                 <!-- Main Heading Starts -->
@@ -44,43 +75,54 @@
                     <h2 data-scroll-reveal="enter top and move 50px over 1.2s">About Us</h2>
                     <p data-scroll-reveal="enter bottom and move 50px over 1.4s">
                         FitFyles attempts to invert the healthcare model and bring healthcare back to the control of individuals
-                        who would like to live better. For centuries, healthcare has been dominated by big houses. 
-                        FitFyles attempts to bring the power of being in control back to you. You are in control of your health records, 
-                        your prescriptions, your tests and your well being. You would decide which doctors are best for you and which medical 
+                        who would like to live better. For centuries, healthcare has been dominated by big houses.
+                        FitFyles attempts to bring the power of being in control back to you. You are in control of your health records,
+                        your prescriptions, your tests and your well being. You would decide which doctors are best for you and which medical
                         institutions deserve to be highlighted for their services. All this begins with click of a picture with your smart-phone.
                     </p><br/>
 					<h5 data-scroll-reveal="enter bottom and move 50px over 1.4s">
                         Sounds delightful?</h5>
                 </div>
                 <!-- Main Heading Ends -->
-                <!-- Services List Starts -->
-                <div id="services-blocks" class="row">
-                    <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock history">
-                        <span class="fa fa-search"></span>
-                        <h4>
-                            Searchable History</h4>
-                        <p>
-                            Maintain and search all your prescriptions, medicines, tests for your entire life.
-                        </p>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services-overlay">
+            <div class="container">
+                <!-- Main Heading Starts -->
+                <div class="main-head">
+                    <h2 data-scroll-reveal="enter top and move 50px over 1.2s">Services</h2>
+                    <!-- Services List Starts -->
+                    <div id="services-blocks" class="row">
+                        <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock history">
+                            <span class="fa fa-search"></span>
+                            <h4>
+                                Searchable History</h4>
+                            <p>
+                                Maintain and search all your prescriptions, medicines, tests for your entire life.
+                            </p>
+                        </div>
+                        <div data-scroll-reveal="enter top and move 50px over 1.7s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                            <span class="fa fa-smile-o"></span>
+                            <h4>
+                                Life Angel</h4>
+                            <p>
+                                Share medical data with hospitals, doctors, emergency rooms and save lives. Be a life angel for someone.
+                            </p>
+                        </div>
+                        <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                            <span class="fa fa-eye"></span>
+                            <h4>
+                                Centre of Attention</h4>
+                            <p>
+                                Be the cynosure for doctors, hospitals, test labs, pharma companies who would love to have you as their customer.
+                            </p>
+                        </div>
                     </div>
-                    <div data-scroll-reveal="enter top and move 50px over 1.7s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                        <span class="fa fa-smile-o"></span>
-                        <h4>
-                            Life Angel</h4>
-                        <p>
-                            Share medical data with hospitals, doctors, emergency rooms and save lives. Be a life angel for someone.
-                        </p>
-                    </div>
-                    <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                        <span class="fa fa-eye"></span>
-                        <h4>
-                            Centre of Attention</h4>
-                        <p>
-                            Be the cynosure for doctors, hospitals, test labs, pharma companies who would love to have you as their customer.
-                        </p>
-                    </div>
+                    <!-- Services List Ends -->
                 </div>
-                <!-- Services List Ends -->
+                <!-- Main Heading Ends -->
             </div>
         </div>
     </section>
@@ -126,24 +168,23 @@
     <footer id="footer">
         <div class="container">
             <!-- Copyright Starts -->
-           
+
             <div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="custom-footer">
                 <p data-scroll-reveal="enter over 3.2s">
-                <div class="col-md-2 col-sm-3 col-xs-12">
+                <div class="col-md-2 col-sm-3 col-xs-12 social">
                 	<a target="_blank" alt="facebook" href="https://www.facebook.com/fitfyles"><i class="fa fa-facebook circle"></i></a>
                 	<a target="_blank" alt="twitter" href="https://twitter.com/FitFyles"><i class="fa fa-twitter circle"></i></a>
                 </div>
                 <div class="col-md-6 col-sm-9 col-xs-12">
-                <ul>
-                	<a href="#services" style="margin-left:15px">ABOUT US</a>
-                	<a href="#services" style="margin-left:15px">HOW IT WORKS</a>
-                	<a href="https://fitfyles.recruiterbox.com" style="margin-left:15px">CAREERS</a>
-                	<a href="#footer" style="margin-left:15px">PRIVACY POLICY</a>
+                <ul class="bottom-links">
+                    <li><a href="#about" class="scroll">About us</a></li>
+                	<li><a href="#services" class="scroll">How it works</a></li>
+                	<li><a href="https://fitfyles.recruiterbox.com">Career</a></li>
+                	<li><a href="#footer" style="margin-left:15px">PRIVACY POLICY</a></li>
                 </ul>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 custom-footer">
-                    &copy
-                        FitFyles LLP
+                    &copy 2016 FitFyles LLP
                 </div>
                 </p>
             </div>
