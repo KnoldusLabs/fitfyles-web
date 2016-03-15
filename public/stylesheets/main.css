@@ -1,11 +1,9 @@
-.custom-footer{ font-family: 'Roboto',sans-serif;text-transform: uppercase; }
+.custom-footer{ font-family: 'Roboto',sans-serif; }
 
 .circle{ border-radius: 50%;margin: 0.15em;font-size: 2em; }
 
-.fa-facebook{ background: #000;color: #FFFFFF;padding: 0.25em 0.6em; }
+.fa-facebook, .fa-twitter{ color: #fff;transition: all .2s ease-in-out; font-size: 15px}
 
-.fa-twitter{ background: #000;color: #FFFFFF;padding: 0.25em 0.4em; }
-
-.circle:hover { transform: scale(1.2); }
+.social a:hover .circle{ transform: scale(1.2); }
 
 div.history{ padding: 48px 20px 30px 20px;}
