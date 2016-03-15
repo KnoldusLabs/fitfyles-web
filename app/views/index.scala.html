@@ -6,24 +6,24 @@
 	<div class="loader"></div>
 <!-- Preloader Ends -->
 <div id="header-nav" class="top-bar">
-        <div class="container">
-            <div class="col-md-8">
+        <div class="container os-animation" data-os-animation="fadeIn" data-os-animation-delay="1s">
+            <div class="col-md-8 col-sm-8 col-xs-12">
                 <a href="#" class="pull-left">
                     <img src="@routes.Assets.versioned("images/fit-logo.png")" class="logo-img" />
         		</a>
                 <ul class="top-menu">
-                	<li><a href="#about" class="scroll">About us</a></li>
-                	<li><a href="#services" class="scroll">How it works</a></li>
+                	<li><a href="#about" class="scroll">About Fitfyles</a></li>
+                	<!-- <li><a href="#services" class="scroll">How it works</a></li> -->
                 	<li><a href="https://fitfyles.recruiterbox.com">Career</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="text-right playstore">
-                    <a href="#">
+                    <a href="http://ec2-52-88-170-161.us-west-2.compute.amazonaws.com:9000/" target="_blank">
                         Login
                     </a>
-                    <a href="#">
+                    <a href="https://play.google.com/store/apps/details?id=com.fitfyles.fitfylesApp" target="_blank">
                         <span class="playstore-icon"> Google Play</span>
                     </a>
                 </div>
@@ -33,7 +33,16 @@
 	<!-- Header Section Starts -->
 	<header id="header">
 		<div class="header-overlay">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="@routes.Assets.versioned("images/3.jpg")"></div>
 			<div class="container side-padding">
+                <div class="position-absolute os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s">
+                    <h2 class="top-heading">
+                            Let's live Better !
+                    </h2>
+                    <p class="top-head">
+                        Welcome to the world of better health at the click of a picture!
+                    </p>
+                </div>
 				<!-- Logo Starts -->
 				<!-- <div data-scroll-reveal="enter top and move 50px over 1.2s">
 					<img src="@routes.Assets.versioned("images/fit-logo.png")" style="width: 245px;margin-left: 40%;margin-bottom: 20%;">
@@ -41,20 +50,25 @@
 				<!-- Logo Ends -->
 				<!-- Main Heading Starts -->
 				<div class="main-head">
-					<div class="col-md-6">
-                        <img src="@routes.Assets.versioned("images/dashboard.png")" />
+					<div class="col-md-6 os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
+
+                         <!-- <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="../../public/images/dashboard.png" data-natural-width="600" data-natural-height="660"></div> -->
+                        <img src="@routes.Assets.versioned("images/dashboard.png")" class="img-responsive animated hiding" data-animation="bounceInDown" data-delay="0"  />
                     </div>
-					<div class="col-md-6 ">
+					<div class="col-md-6 os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
                         <div class="text-center side-content">
-                        <h2 data-scroll-reveal="enter left and move 50px over 1.8s" style="color: #67DFE0;">
+                        <h2>
     	                        Let's live Better !
                         </h2>
-                        <p>
+                        <p >
                             Track your records' status on dashboard, always shows you the updated stats
                         </p>
                         <div class="playstore fl-none">
                             <h6>Download now for free</h6>
-                            <a href="#">
+							<a href="#" target="_blank">
+		                        <span class="playstore-icon ios"> Coming Soon</span>
+		                    </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.fitfyles.fitfylesApp" target="_blank">
                                 <span class="playstore-icon"> Google Play</span>
                             </a>
                         </div>
@@ -71,9 +85,9 @@
         <div class="services-overlay">
             <div class="container">
                 <!-- Main Heading Starts -->
-                <div class="main-head">
-                    <h2 data-scroll-reveal="enter top and move 50px over 1.2s">About Us</h2>
-                    <p data-scroll-reveal="enter bottom and move 50px over 1.4s">
+                <div class="main-head os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+                    <h2>About Us</h2>
+                    <p>
                         FitFyles attempts to invert the healthcare model and bring healthcare back to the control of individuals
                         who would like to live better. For centuries, healthcare has been dominated by big houses.
                         FitFyles attempts to bring the power of being in control back to you. You are in control of your health records,
@@ -84,109 +98,94 @@
                         Sounds delightful?</h5>
                 </div>
                 <!-- Main Heading Ends -->
+
+                <!-- Services List Starts -->
+                <div id="services-blocks" class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock history os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
+                        <span class="fa fa-search"></span>
+                        <h4>
+                            Searchable History</h4>
+                        <p>
+                            Maintain and search all your prescriptions, medicines, tests for your entire life.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                        <span class="fa fa-smile-o"></span>
+                        <h4>
+                            Life Angel</h4>
+                        <p>
+                            Share medical data with hospitals, doctors, emergency rooms and save lives. Be a life angel for someone.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+                        <span class="fa fa-eye"></span>
+                        <h4>
+                            Centre of Attention</h4>
+                        <p>
+                            Be the cynosure for doctors, hospitals, test labs, pharma companies who would love to have you as their customer.
+                        </p>
+                    </div>
+                </div>
+                <!-- Services List Ends -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="screenshot-overlay">
+            <div class="container">
+                <div class="col-sm-4 os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s">
+					<img src="@routes.Assets.versioned("images/mrhistory.png")" class="img-responsive" />
+				</div>
+                <div class="col-sm-4 os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s">
+					<img src="@routes.Assets.versioned("images/mrdetail.png")" class="img-responsive" />
+				</div>
+                <div class="col-sm-4 os-animation" data-os-animation="bounceInDown" data-os-animation-delay="0s">
+					<img src="@routes.Assets.versioned("images/mr-search.png")" class="img-responsive" />
+				</div>
             </div>
         </div>
     </section>
-    <section id="services">
-        <div class="services-overlay">
+
+    <section>
+        <div class="try-overlay">
             <div class="container">
-                <!-- Main Heading Starts -->
-                <div class="main-head">
-                    <h2 data-scroll-reveal="enter top and move 50px over 1.2s">Services</h2>
-                    <!-- Services List Starts -->
-                    <div id="services-blocks" class="row">
-                        <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock history">
-                            <span class="fa fa-search"></span>
-                            <h4>
-                                Searchable History</h4>
-                            <p>
-                                Maintain and search all your prescriptions, medicines, tests for your entire life.
-                            </p>
-                        </div>
-                        <div data-scroll-reveal="enter top and move 50px over 1.7s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                            <span class="fa fa-smile-o"></span>
-                            <h4>
-                                Life Angel</h4>
-                            <p>
-                                Share medical data with hospitals, doctors, emergency rooms and save lives. Be a life angel for someone.
-                            </p>
-                        </div>
-                        <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                            <span class="fa fa-eye"></span>
-                            <h4>
-                                Centre of Attention</h4>
-                            <p>
-                                Be the cynosure for doctors, hospitals, test labs, pharma companies who would love to have you as their customer.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Services List Ends -->
+                <div class="playstore fl-none">
+                    <h6>Try out Fitfyles, It's free</h6>
+					<a href="#" target="_blank">
+                        <span class="playstore-icon ios"> Coming Soon</span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.fitfyles.fitfylesApp" target="_blank">
+                        <span class="playstore-icon"> Google Play</span>
+                    </a>
                 </div>
-                <!-- Main Heading Ends -->
             </div>
+
+            <a href="" class="go-to-top"><i class="fa fa-angle-up"></i></a>
         </div>
     </section>
     <!-- Services Section Ends -->
-    <!-- Contact Us Section Starts -->
-    <section id="contact">
-        <div class="container">
-            <!-- Main Heading Starts -->
-            <div class="main-head">
-                <h2 data-scroll-reveal="enter top and move 50px over 1.2s" class="MT40">
-                    Request an Invite</h2>
-            </div>
-            <!-- Main Heading Ends -->
-            <!-- Form & Address Blocks Starts -->
-            <div class="row">
-                <!-- Contact Form Starts -->
-                <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <form id="contact-form" class="contact-form" name="contact-form">
-                    	<div class="form-group">
-                        	<input type="text" name="name" class="form-control" required placeholder="Enter Your Name">
-                    	</div>
-                    	<div class="form-group">
-                        	<input type="email" name="email" class="form-control" required placeholder="Enter Your Email">
-                    	</div>
-						<div class="form-group">
-                        	<button type="submit" class="btn btn-info">Subscribe</button>
-                    	</div>
-                    </form>
-                </div>
-                <!-- Contact Form Ends -->
-                <!-- Contact Address Starts -->
-                <div data-scroll-reveal="enter right and move 50px over 1.8s" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <p>
-                        You could be changing the way you manage your and your loved ones health forever. Welcome to the inverted model of healthcare where the health seeker is the king.</p>
-                </div>
-                <!-- Contact Address Ends -->
-            </div>
-            <!-- Form & Address Blocks Ends -->
-        </div>
-    </section>
-    <!-- Contact Us Section Ends -->
+
     <!-- Footer Starts -->
     <footer id="footer">
         <div class="container">
             <!-- Copyright Starts -->
 
             <div data-scroll-reveal="enter bottom and move 50px over 1.2s" class="custom-footer">
-                <p data-scroll-reveal="enter over 3.2s">
-                <div class="col-md-2 col-sm-3 col-xs-12 social">
-                	<a target="_blank" alt="facebook" href="https://www.facebook.com/fitfyles"><i class="fa fa-facebook circle"></i></a>
+                <div class="col-md-8 col-sm-8 col-xs-12 pull-left">
+                        <p>&copy 2016 FitFyles Technologies</p>
+                    <ul class="bottom-links">
+                    	<li><a href="https://fitfyles.recruiterbox.com">Career</a></li>
+                    	<li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 text-right social">
+                    <a target="_blank" alt="facebook" href="https://www.facebook.com/fitfyles"><i class="fa fa-facebook circle"></i></a>
                 	<a target="_blank" alt="twitter" href="https://twitter.com/FitFyles"><i class="fa fa-twitter circle"></i></a>
                 </div>
-                <div class="col-md-6 col-sm-9 col-xs-12">
-                <ul class="bottom-links">
-                    <li><a href="#about" class="scroll">About us</a></li>
-                	<li><a href="#services" class="scroll">How it works</a></li>
-                	<li><a href="https://fitfyles.recruiterbox.com">Career</a></li>
-                	<li><a href="#footer" style="margin-left:15px">PRIVACY POLICY</a></li>
-                </ul>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 custom-footer">
-                    &copy 2016 FitFyles LLP
-                </div>
-                </p>
+
             </div>
             <!-- Copyright Ends -->
         </div>

@@ -15,6 +15,10 @@ body {
 a, a:hover, a:focus {
     color: #fff;
 }
+ul, li{
+    padding: 0;
+    margin:0;
+}
 li{
     display: inline-block;
 }
@@ -56,14 +60,14 @@ h6 {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: #000 url(../images/loader.gif) 50% 50% no-repeat;
+    background: #fff url(../images/loader.gif) 50% 50% no-repeat;
 }
 
 /* Header  */
 
 #header {}
 .header-overlay {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.5);
     padding: 30px 0;
 }
 .hexagon {
@@ -169,7 +173,7 @@ ul.countdown li p {
 
 .main-head {
     text-align: center;
-    padding: 0 0 40px;
+    padding:20px 0 40px;
 }
 .main-head h2, .main-head p {}
 .main-head h2 {
@@ -204,6 +208,7 @@ ul.countdown li p {
 #services-blocks div {
     text-align: center;
     padding: 20px 20px 30px 20px;
+    min-height: 330px;
 }
 #services-blocks div span.fa {
     width: 110px;
@@ -263,14 +268,17 @@ input {
 /* Footer  */
 
 #footer {
-    padding: 10px 0;
-    margin-top: 40px;
+    padding: 6px 0 0;
     font-size: 13px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.1)
+    background:#eee;
+    color: #333;
+}
+.text-right{
+    text-align: right
 }
 #footer p {
-    margin: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Responsive */
@@ -367,6 +375,9 @@ header{
     height: 30px;
     display: inline-block;
 }
+.ios{
+    background: url(../images/ios.png) no-repeat top left ;
+}
 .playstore>a:hover{
     border-color: #222
 }
@@ -381,7 +392,7 @@ header{
     padding: 60px 20px;
 }
 .playstore h6{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 img.logo-img {
     height: 48px;
@@ -406,6 +417,9 @@ ul.top-menu li a:hover{
     display: inline-block;
     margin-left: 15px;
 }
+.bottom-links li a{
+    color: #333
+}
 
 .social a {
     width: 50px;
@@ -415,4 +429,84 @@ ul.top-menu li a:hover{
     border-radius: 50%;
     display: inline-block;
     text-align: center;
+}
+.custom-footer p{
+    float: left;
+}
+
+@media (max-width:767px){
+    div[class*=' col']{
+        padding:0 !important
+    }
+    #header-nav{
+        height: 60px !important;
+        padding: 5px 0 10px;
+        position: relative !important;
+    }
+    #header-nav .col-md-8.col-sm-8.col-xs-12{
+        text-align: center;
+    }
+    #header-nav .top-menu{
+        display: none
+    }
+    #header-nav .col-md-8.col-sm-8.col-xs-12 a.pull-left{
+        float: none !important
+    }
+    .playstore{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    #footer .col-md-8.col-sm-8.col-xs-12.pull-left{
+        float: none !important;
+        text-align: center;
+    }
+    #footer .text-right{
+        text-align: left;
+    }
+}
+.try-overlay, .screenshot-overlay{
+    background: #44697B;
+    padding:50px 0 20px;
+    text-align: center;
+}
+.screenshot-overlay{
+    background: #2F5364
+}
+.social a{
+    width: 25px;
+height: 25px;
+background: #2F5364;
+border-radius: 50%;
+display: inline-block;
+text-align: center;
+line-height: 30px;
+}
+.try-overlay h6{
+    font-size: 30px;
+}
+.go-to-top i{
+    font-size: 70px;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+.position-absolute{
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+h2.top-heading{
+    color: #67DFE0;
+    margin-bottom: 10px;
+}
+p.top-head{
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px 20px;
 }

@@ -11,6 +11,33 @@ $(function() {
         $('#header-nav').data('size', 'big');
     });
 
+    function onScrollInit( items, trigger ) {
+  items.each( function() {
+    var osElement = $(this),
+        osAnimationClass = osElement.attr('data-os-animation'),
+        osAnimationDelay = osElement.attr('data-os-animation-delay');
+
+        osElement.css({
+          '-webkit-animation-delay':  osAnimationDelay,
+          '-moz-animation-delay':     osAnimationDelay,
+          'animation-delay':          osAnimationDelay
+        });
+
+        var osTrigger = ( trigger ) ? trigger : osElement;
+
+        osTrigger.waypoint(function() {
+          osElement.addClass('animated').addClass(osAnimationClass);
+          },{
+              triggerOnce: true,
+              offset: '90%'
+        });
+  });
+}
+
+ onScrollInit( $('.os-animation') );
+ onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+
+
     $(window).scroll(function() {
         if ($(document).scrollTop() > 100) {
             if ($('#header-nav').data('size') == 'big') {
@@ -35,6 +62,10 @@ $(function() {
         }
     });
 
+	$('.go-to-top').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+   		return false;
+	});
 
 	// to top right away
 if ( window.location.hash ) scroll(0,0);
@@ -64,7 +95,8 @@ $(function() {
 
 
     // Backstretchs
-    $("#header").backstretch("assets/images/3.jpg");
+	$('.parallax-window').parallax({imageSrc: 'assets/images/3.jpg'});
+    // $("#header").backstretch("assets/images/3.jpg");
     $("#services").backstretch("assets/images/3.jpg");
 
 });
